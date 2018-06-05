@@ -26,29 +26,12 @@
 
     <distributionManagement>
         <repository>
-            <id>releases</id>
-            <url>http://nexus.ostdlabs.com/content/repositories/releases/</url>
+            <id>nexus.thirdparty</id>
+            <url>http://nexus.ostdlabs.com/content/repositories/thirdparty/</url>
         </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <url>http://nexus.ostdlabs.com/content/repositories/snapshots</url>
-            <uniqueVersion>false</uniqueVersion>
-        </snapshotRepository>
     </distributionManagement>
 
     <repositories>
-        <repository>
-            <id>ostdlabs.nexus.releases</id>
-            <url>http://nexus.ostdlabs.com/content/repositories/releases/</url>
-            <releases><enabled>true</enabled></releases>
-            <snapshots><enabled>false</enabled></snapshots>
-        </repository>
-        <repository>
-            <id>ostdlabs.nexus.snapshots</id>
-            <url>http://nexus.ostdlabs.com/content/repositories/snapshots</url>
-            <releases><enabled>false</enabled></releases>
-            <snapshots><enabled>true</enabled></snapshots>
-        </repository>
         <repository>
             <id>central</id>
             <name>bintray</name>
