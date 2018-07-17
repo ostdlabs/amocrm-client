@@ -2,8 +2,6 @@
 
 AmoCRM API client based on Retrofit2 http library
 
-for more high-level tooling see amocrm-client-spring
-
 ## Usage
 
 Maven:
@@ -12,7 +10,7 @@ Maven:
 <dependency>
   <groupId>com.amocrm</groupId>
   <artifactId>amocrm-client</artifactId>
-  <version>0.1.1</version>
+  <version>0.1.3</version>
   <type>pom</type>
 </dependency>
 ```
@@ -25,8 +23,12 @@ repositories {
 }
 
 dependencies {
-    compile 'com.amocrm:amocrm-client:0.1.1'
+    compile 'com.amocrm:amocrm-client:0.1.3'
 }
 ```
+
+to build for Java 1.7:
+
+./gradlew -Dorg.gradle.java.home=/opt/jdk1.7.0_75/ shadowJar
 
 Checkout tests for code examples
