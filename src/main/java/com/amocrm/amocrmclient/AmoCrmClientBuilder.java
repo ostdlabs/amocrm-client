@@ -16,7 +16,7 @@ public class AmoCrmClientBuilder {
     public OkHttpClient getOkHttpClient() {
 
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
-        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
+        logging.setLevel(HttpLoggingInterceptor.Level.NONE);
 
         CookieHandler cookieHandler = new SessionCookieManager();
         JavaNetCookieJar jncj = new JavaNetCookieJar(cookieHandler);
